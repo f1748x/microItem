@@ -1,6 +1,6 @@
-module github.com/f1748x/microItem
+module github.com/f1748x/xquser
 
-go 1.13
+go 1.16
 
 require (
 	github.com/golang/protobuf v1.5.2
