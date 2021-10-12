@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+//定义包名称
+option go_package = "./protobuf;user";
+package tfxq.micro.service.user;
+
+//定义user的服务接口
+service UserService{
+    //获取用户账户信息
+    rpc GetAccount(GetAccountRequest) returns (Account){}
+}
+
+message GetAccountRequest{
+    int32 id = 1;
+}
+
+//定义用户账号信息
+message Account{
+    int32 id = 1;
+    string username = 2;
+    string address = 3;
+    string phone = 4;
+}
